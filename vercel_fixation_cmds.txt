@@ -1,0 +1,17 @@
+run powershell as a Administrator--------------------
+-------------------------------------------------------------------------------------
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+Y
+
+vercel --version
+
+-----------------------------to revert the changes----------------------------------
+If you want to revert the execution policy after deploying:
+====================================================================================
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted
+
+======================================================================================
